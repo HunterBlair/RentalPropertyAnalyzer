@@ -1,0 +1,21 @@
+
+
+
+
+header {
+    font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    color: gold;
+}
+.title {
+    font-size: larger;
+    color: gold;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+    background-color: black;
+    color: gold;
+
+
+}

@@ -1,0 +1,15 @@
+
+
+
+form
+{
+    display: block;
+    text-align: center;
+}
+mainForm
+{
+    display: inline-block;
+    margin-left: 500px;
+    margin-right: 100px;
+    text-align: left;
+}

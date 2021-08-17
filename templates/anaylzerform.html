@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rentalyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='analyzer.css') }}">
+</head>
+<body>
+    <div class="mainForm">
+        <form method="POST" align="center" action="{{url_for('main_tool')}}">
+            <label for="price">Purchase Price:</label><br>
+            <input type="text" id="price" name="price"><br>
+
+            <label for="rate">Interest Rate:</label><br>
+            <input type="text" id="rate" name="rate"><br>
+
+            <label for="term">Length of Loan in Years:</label><br>
+            <input type="text" id="term" name="term"><br>
+
+            <label for="downpymt">Down Payment:</label><br>
+            <input type="text" id="downpymt" name="downpymt"><br>
+
+            <label for="rent"> Expected Rent:</label><br>
+            <input type="text" id="rent" name="rent"><br>
+        </form>
+    </div>
+    <br>
+    <div class="expenseForm">
+        <h3>Please enter the expected monthly expenses.</h3>
+        <form align="center" action="{{url_for('main_tool')}}">
+            <label for="repairs">Repairs:</label><br>
+            <input type="text" id="repairs" name="repairs" placeholder="Repairs Cost"><br>
+
+            <label for="maintenance">Maintenance:</label><br>
+            <input type="text" id="maintenance" name="maintenance" placeholder="Maintenance Costs" ><br>
+
+            <label for="vacancy">Vacancy:</label><br>
+            <input type="text" id="vacancy" name="vacancy" placeholder="Vacancy: ex.10%"><br>
+
+            <label for="propertymngmt">Property Management Fee:</label><br>
+            <input type="text" id="propertymngmt" name="propertymngmt" placeholder="Property Management Fee"><br>
+
+            <label for="taxes">Property Taxes:</label><br>
+            <input type="text" id="taxes" name="taxes" placeholder="Property Taxes"><br>
+
+            <label for="insurance">Insurance :</label><br>
+            <input type="text" id="insurance" name="insurance" placeholder="Insurance"><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <br>
+
+</body>
+</html>
